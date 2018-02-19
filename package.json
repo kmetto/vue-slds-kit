@@ -1,0 +1,23 @@
+{
+  "name": "vue-slds-kit",
+  "version": "0.0.1",
+  "description": "Vuejs UI kit for Salesforce Lightning Design System",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmetto/vue-slds-kit.git"
+  },
+  "keywords": [
+    "slds",
+    "salesforce"
+  ],
+  "author": "Konstantin Metto <met9127@gmail.com> (https://unicore.by)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kmetto/vue-slds-kit/issues"
+  },
+  "homepage": "https://github.com/kmetto/vue-slds-kit#readme"
+}
