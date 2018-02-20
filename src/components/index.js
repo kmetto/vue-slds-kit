@@ -8,7 +8,7 @@ import BrandBand from './BrandBand/BrandBand.vue';
 import Breadcrumbs from './Breadcrumbs/Breadcrumbs.vue';
 import ButtonGroup from './ButtonGroup/ButtonGroup.vue';
 import ButtonIcon from './ButtonIcon/ButtonIcon.vue';
-import Buttons from './Buttons/Buttons.vue';
+import Button from './Button/Button.vue';
 import Card from './Card/Card.vue';
 import Carousel from './Carousel/Carousel.vue';
 import Checkbox from './Checkbox/Checkbox.vue';
@@ -85,7 +85,7 @@ export {
   Breadcrumbs,
   ButtonGroup,
   ButtonIcon,
-  Buttons,
+  Button,
   Card,
   Carousel,
   Checkbox,
