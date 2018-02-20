@@ -6,53 +6,53 @@ import Avatar from './Avatar/Avatar.vue';
 import Badges from './Badges/Badges.vue';
 import BrandBand from './BrandBand/BrandBand.vue';
 import Breadcrumbs from './Breadcrumbs/Breadcrumbs.vue';
-import ButtonGroups from './ButtonGroups/ButtonGroups.vue';
-import ButtonIcons from './ButtonIcons/ButtonIcons.vue';
+import ButtonGroup from './ButtonGroup/ButtonGroup.vue';
+import ButtonIcon from './ButtonIcon/ButtonIcon.vue';
 import Buttons from './Buttons/Buttons.vue';
-import Cards from './Cards/Cards.vue';
+import Card from './Card/Card.vue';
 import Carousel from './Carousel/Carousel.vue';
 import Checkbox from './Checkbox/Checkbox.vue';
 import CheckboxButton from './CheckboxButton/CheckboxButton.vue';
-import ChecCheckboxButtonGroupkboxButton from './CheckboxButtonGroup/CheckboxButtonGroup.vue';
+import CheckboxButtonGroup from './CheckboxButtonGroup/CheckboxButtonGroup.vue';
 import CheckboxToggle from './CheckboxToggle/CheckboxToggle.vue';
 import ColorPicker from './ColorPicker/ColorPicker.vue';
 import Combobox from './Combobox/Combobox.vue';
-import DataTables from './DataTables/DataTables.vue';
-import Datepickers from './Datepickers/Datepickers.vue';
+import DataTable from './DataTable/DataTable.vue';
+import Datepicker from './Datepicker/Datepicker.vue';
 import DatetimePicker from './DatetimePicker/DatetimePicker.vue';
 import DockedComposer from './DockedComposer/DockedComposer.vue';
 import DockedFormFooter from './DockedFormFooter/DockedFormFooter.vue';
 import DockedUtilityBar from './DockedUtilityBar/DockedUtilityBar.vue';
 import DuelingPicklist from './DuelingPicklist/DuelingPicklist.vue';
-import DynamicIcons from './DynamicIcons/DynamicIcons.vue';
+import DynamicIcon from './DynamicIcon/DynamicIcon.vue';
 import DynamicMenu from './DynamicMenu/DynamicMenu.vue';
 import ExpandableSection from './ExpandableSection/ExpandableSection.vue';
-import Feeds from './Feeds/Feeds.vue';
-import Files from './Files/Files.vue';
+import Feed from './Feed/Feed.vue';
+import File from './File/File.vue';
 import FileSelector from './FileSelector/FileSelector.vue';
 import FormElement from './FormElement/FormElement.vue';
 import FormLayout from './FormLayout/FormLayout.vue';
 import GlobalHeader from './GlobalHeader/GlobalHeader.vue';
 import GlobalValidation from './GlobalValidation/GlobalValidation.vue';
-import Icons from './Icons/Icons.vue';
+import Icon from './Icon/Icon.vue';
 import Input from './Input/Input.vue';
 import ListBuilder from './ListBuilder/ListBuilder.vue';
-import Lookups from './Lookups/Lookups.vue';
+import Lookup from './Lookup/Lookup.vue';
 import Map from './Map/Map.vue';
-import Menus from './Menus/Menus.vue';
-import Modals from './Modals/Modals.vue';
-import Notifications from './Notifications/Notifications.vue';
-import PageHeaders from './PageHeaders/PageHeaders.vue';
-import Panels from './Panels/Panels.vue';
+import Menu from './Menu/Menu.vue';
+import Modal from './Modal/Modal.vue';
+import Notification from './Notification/Notification.vue';
+import PageHeader from './PageHeader/PageHeader.vue';
+import Panel from './Panel/Panel.vue';
 import Path from './Path/Path.vue';
 import PickList from './PickList/PickList.vue';
-import Pills from './Pills/Pills.vue';
-import Popovers from './Popovers/Popovers.vue';
+import Pill from './Pill/Pill.vue';
+import Popover from './Popover/Popover.vue';
 import ProgressBar from './ProgressBar/ProgressBar.vue';
 import ProgressIndicator from './ProgressIndicator/ProgressIndicator.vue';
 import ProgressRing from './ProgressRing/ProgressRing.vue';
 import Prompt from './Prompt/Prompt.vue';
-import Publishers from './Publishers/Publishers.vue';
+import Publisher from './Publisher/Publisher.vue';
 import RadioButtonGroup from './RadioButtonGroup/RadioButtonGroup.vue';
 import RadioGroup from './RadioGroup/RadioGroup.vue';
 import RichTextEditor from './RichTextEditor/RichTextEditor.vue';
@@ -60,15 +60,15 @@ import ScopedNotifications from './ScopedNotifications/ScopedNotifications.vue';
 import ScopedTabs from './ScopedTabs/ScopedTabs.vue';
 import Select from './Select/Select.vue';
 import Slider from './Slider/Slider.vue';
-import Spinners from './Spinners/Spinners.vue';
+import Spinner from './Spinner/Spinner.vue';
 import SplitView from './SplitView/SplitView.vue';
 import Tabs from './Tabs/Tabs.vue';
 import Textarea from './Textarea/Textarea.vue';
-import Tiles from './Tiles/Tiles.vue';
+import Tile from './Tile/Tile.vue';
 import Timepicker from './Timepicker/Timepicker.vue';
 import Toast from './Toast/Toast.vue';
-import Tooltips from './Tooltips/Tooltips.vue';
-import Trees from './Trees/Trees.vue';
+import Tooltip from './Tooltip/Tooltip.vue';
+import Tree from './Tree/Tree.vue';
 import VerticalNavigation from './VerticalNavigation/VerticalNavigation.vue';
 import VerticalTabs from './VerticalTabs/VerticalTabs.vue';
 import VisualPicker from './VisualPicker/VisualPicker.vue';
@@ -83,53 +83,53 @@ export {
   Badges,
   BrandBand,
   Breadcrumbs,
-  ButtonGroups,
-  ButtonIcons,
+  ButtonGroup,
+  ButtonIcon,
   Buttons,
-  Cards,
+  Card,
   Carousel,
   Checkbox,
   CheckboxButton,
-  ChecCheckboxButtonGroupkboxButton,
+  CheckboxButtonGroup,
   CheckboxToggle,
   ColorPicker,
   Combobox,
-  DataTables,
-  Datepickers,
+  DataTable,
+  Datepicker,
   DatetimePicker,
   DockedComposer,
   DockedFormFooter,
   DockedUtilityBar,
   DuelingPicklist,
-  DynamicIcons,
+  DynamicIcon,
   DynamicMenu,
   ExpandableSection,
-  Feeds,
-  Files,
+  Feed,
+  File,
   FileSelector,
   FormElement,
   FormLayout,
   GlobalHeader,
   GlobalValidation,
-  Icons,
+  Icon,
   Input,
   ListBuilder,
-  Lookups,
+  Lookup,
   Map,
-  Menus,
-  Modals,
-  Notifications,
-  PageHeaders,
-  Panels,
+  Menu,
+  Modal,
+  Notification,
+  PageHeader,
+  Panel,
   Path,
   PickList,
-  Pills,
-  Popovers,
+  Pill,
+  Popover,
   ProgressBar,
   ProgressIndicator,
   ProgressRing,
   Prompt,
-  Publishers,
+  Publisher,
   RadioButtonGroup,
   RadioGroup,
   RichTextEditor,
@@ -137,15 +137,15 @@ export {
   ScopedTabs,
   Select,
   Slider,
-  Spinners,
+  Spinner,
   SplitView,
   Tabs,
   Textarea,
-  Tiles,
+  Tile,
   Timepicker,
   Toast,
-  Tooltips,
-  Trees,
+  Tooltip,
+  Tree,
   VerticalNavigation,
   VerticalTabs,
   VisualPicker,
