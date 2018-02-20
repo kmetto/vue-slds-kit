@@ -1,6 +1,6 @@
 {
   "name": "vue-slds-kit",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Vuejs UI kit for Salesforce Lightning Design System",
   "main": "dist/slds-vue-kit.js",
   "scripts": {
