@@ -2,9 +2,9 @@ import SldsButton from '../Button/Button.vue';
 
 export default {
   name: 'slds-prompt',
-  components: [
+  components: {
     SldsButton,
-  ],
+  },
   data(){
     return {
       isVisible: false,
