@@ -1649,8 +1649,7 @@ exports.default = {
 /* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(81);
-module.exports = __webpack_require__(311);
+module.exports = __webpack_require__(81);
 
 
 /***/ }),
@@ -17322,12 +17321,6 @@ if (false) {
   }
 }
 
-/***/ }),
-/* 311 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
 /***/ })
 /******/ ]);
-//# sourceMappingURL=slds-vue-kit.js.map
+//# sourceMappingURL=index.js.map

@@ -2,9 +2,10 @@
   "name": "vue-slds-kit",
   "version": "0.0.8",
   "description": "Vuejs UI kit for Salesforce Lightning Design System",
-  "main": "dist/slds-vue-kit.js",
+  "main": "lib/slds-vue-kit.js",
   "scripts": {
-    "test": "test"
+    "doc": "babel-node build/doc/",
+    "lib": "babel-node build/lib/"
   },
   "repository": {
     "type": "git",
@@ -22,8 +23,10 @@
   "homepage": "https://github.com/kmetto/vue-slds-kit#readme",
   "devDependencies": {
     "@salesforce-ux/design-system": "^2.5.2",
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
     "css-loader": "^0.28.9",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.7",
