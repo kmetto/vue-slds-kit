@@ -5,7 +5,9 @@
   "main": "lib/slds-vue-kit.js",
   "scripts": {
     "doc": "babel-node build/doc/",
-    "lib": "babel-node build/lib/"
+    "lib": "babel-node build/lib/",
+    "lint": "eslint src build docs/src",
+    "lint:fix": "eslint --fix src build docs/src"
   },
   "repository": {
     "type": "git",
@@ -28,17 +30,24 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "css-loader": "^0.28.9",
+    "eslint": "^4.18.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.7",
+    "husky": "^0.15.0-rc.8",
     "node-sass": "^4.7.2",
     "resolve-url-loader": "^2.2.1",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.20.2",
     "vue-loader": "^14.1.1",
-    "vue-template-compiler": "^2.5.13",
-    "webpack": "^3.11.0"
+    "vue-template-compiler": "^2.5.13"
   },
   "dependencies": {
-    "vue": "^2.5.13"
+    "vue": "^2.5.13",
+    "webpack": "^3.11.0"
+  },
+  "husky": {
+    "pre-commit": "npm run lint"
   }
 }

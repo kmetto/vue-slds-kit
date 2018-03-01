@@ -45,7 +45,7 @@ import Notification from './Notification/Notification.vue';
 import PageHeader from './PageHeader/PageHeader.vue';
 import Panel from './Panel/Panel.vue';
 import Path from './Path/Path.vue';
-import PickList from './PickList/PickList.vue';
+import Picklist from './Picklist/Picklist.vue';
 import Pill from './Pill/Pill.vue';
 import Popover from './Popover/Popover.vue';
 import ProgressBar from './ProgressBar/ProgressBar.vue';
@@ -122,7 +122,7 @@ export {
   PageHeader,
   Panel,
   Path,
-  PickList,
+  Picklist,
   Pill,
   Popover,
   ProgressBar,

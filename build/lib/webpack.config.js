@@ -1,19 +1,19 @@
-import config from '../config';
 import path from 'path';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
+import config from '../config';
 
 export default {
   context: config.root,
   entry: [
     path.resolve('src', 'index.js'),
-    path.resolve('src', 'styles.sass')
+    path.resolve('src', 'styles.sass'),
   ],
   output: {
     path: config.lib,
     filename: 'vue-slds-kit.js',
   },
-  devtool: "source-map",
-  module:{
+  devtool: 'source-map',
+  module: {
     rules: [
       {
         test: /\.vue$/,
@@ -36,17 +36,17 @@ export default {
       {
         test: /\.(sass|scss)$/,
         use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
+          fallback: 'style-loader',
           use: [
-            {loader: 'css-loader'},
-            {loader: 'resolve-url-loader'},
-            {loader: 'sass-loader?sourceMap'},
-          ]
+            { loader: 'css-loader' },
+            { loader: 'resolve-url-loader' },
+            { loader: 'sass-loader?sourceMap' },
+          ],
         }),
       },
     ],
   },
   plugins: [
-    new ExtractTextPlugin("vue-slds-kit.css"),
-  ]
+    new ExtractTextPlugin('vue-slds-kit.css'),
+  ],
 };

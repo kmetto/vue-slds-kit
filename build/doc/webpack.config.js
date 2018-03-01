@@ -1,6 +1,6 @@
 import path from 'path';
-import config from '../config';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
+import config from '../config';
 
 module.exports = {
   entry: [
@@ -10,8 +10,8 @@ module.exports = {
     path: config.docsDist,
     filename: 'index.js',
   },
-  devtool: "source-map",
-  module:{
+  devtool: 'source-map',
+  module: {
     rules: [
       {
         test: /\.vue$/,
@@ -34,17 +34,17 @@ module.exports = {
       {
         test: /\.(sass|scss)$/,
         use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
+          fallback: 'style-loader',
           use: [
-            {loader: 'css-loader'},
-            {loader: 'resolve-url-loader'},
-            {loader: 'sass-loader?sourceMap'},
-          ]
+            { loader: 'css-loader' },
+            { loader: 'resolve-url-loader' },
+            { loader: 'sass-loader?sourceMap' },
+          ],
         }),
       },
     ],
   },
   plugins: [
-    new ExtractTextPlugin("slds-vue-kit.css"),
-  ]
+    new ExtractTextPlugin('slds-vue-kit.css'),
+  ],
 };

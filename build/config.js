@@ -1,6 +1,6 @@
 import path from 'path';
 
-module.exports =  {
+module.exports = {
   root: path.resolve(__dirname, '..'),
   lib: path.resolve(__dirname, '..', 'lib'),
   docRoot: path.resolve(__dirname, '..', 'docs'),

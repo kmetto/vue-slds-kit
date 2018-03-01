@@ -5,16 +5,16 @@ export default {
   components: {
     SldsButton,
   },
-  data(){
+  data() {
     return {
       isVisible: false,
     };
   },
   methods: {
-    show(){
+    show() {
       this.isVisible = true;
     },
-    hide(){
+    hide() {
       this.isVisible = false;
     },
     onClose() {

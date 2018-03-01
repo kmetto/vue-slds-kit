@@ -34,7 +34,7 @@ export default {
         'slds-button_inverse': this.inverse,
         'slds-button_destructive': this.destructive,
         'slds-button_success': this.success,
-      }
+      },
     };
   },
 };
