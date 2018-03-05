@@ -7,7 +7,8 @@
     "doc": "babel-node build/doc/",
     "lib": "babel-node build/lib/",
     "lint": "eslint src build docs/src",
-    "lint:fix": "eslint --fix src build docs/src"
+    "lint:fix": "eslint --fix src build docs/src",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -25,8 +26,10 @@
   "homepage": "https://github.com/kmetto/vue-slds-kit#readme",
   "devDependencies": {
     "@salesforce-ux/design-system": "^2.5.2",
+    "@vue/test-utils": "^1.0.0-beta.12",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
+    "babel-jest": "^22.4.1",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "css-loader": "^0.28.9",
@@ -36,11 +39,14 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.7",
     "husky": "^0.15.0-rc.8",
+    "jest": "^22.4.2",
     "node-sass": "^4.7.2",
     "resolve-url-loader": "^2.2.1",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.20.2",
+    "vue-jest": "^2.1.0",
     "vue-loader": "^14.1.1",
+    "vue-server-renderer": "^2.5.13",
     "vue-template-compiler": "^2.5.13"
   },
   "dependencies": {
@@ -50,6 +56,20 @@
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint"
+    }
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "vue"
+    ],
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
+    },
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/src/$1"
     }
   }
 }

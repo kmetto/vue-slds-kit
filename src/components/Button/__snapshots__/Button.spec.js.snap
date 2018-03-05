@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button matches snapshot 1`] = `"<button data-server-rendered=\\"true\\" class=\\"slds-button\\">  </button>"`;
+
+exports[`Button matches snapshot with slot 1`] = `"<button data-server-rendered=\\"true\\" class=\\"slds-button\\"> Button </button>"`;
