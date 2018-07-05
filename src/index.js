@@ -1,3 +1,3 @@
-import install from './components/components';
+import install from './components';
 
 export default install;

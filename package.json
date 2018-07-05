@@ -2,12 +2,12 @@
   "name": "vue-slds-kit",
   "version": "0.0.8",
   "description": "Vuejs UI kit for Salesforce Lightning Design System",
-  "main": "lib/slds-vue-kit.js",
+  "main": "dist/slds-vue-kit.js",
   "scripts": {
-    "doc": "babel-node build/doc/",
-    "lib": "babel-node build/lib/",
+    "build:prod": "webpack --config build/webpack.config.prod.babel.js",
+    "build:dev": "webpack --config build/webpack.config.dev.babel.js",
     "lint": "eslint src build docs/src",
-    "lint:fix": "eslint --fix src build docs/src",
+    "lint:fix": "eslint --fix src build",
     "test": "jest"
   },
   "repository": {
@@ -24,7 +24,7 @@
     "url": "https://github.com/kmetto/vue-slds-kit/issues"
   },
   "homepage": "https://github.com/kmetto/vue-slds-kit#readme",
-  "devDependencies": {
+  "dependencies": {
     "@salesforce-ux/design-system": "^2.5.2",
     "@vue/test-utils": "^1.0.0-beta.12",
     "babel-cli": "^6.26.0",
@@ -32,26 +32,34 @@
     "babel-jest": "^22.4.1",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.1",
     "css-loader": "^0.28.9",
     "eslint": "^4.18.1",
     "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-import-resolver-webpack": "^0.8.4",
     "eslint-plugin-import": "^2.9.0",
-    "extract-text-webpack-plugin": "^3.0.2",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.7",
+    "html-webpack-plugin": "^3.0.6",
     "husky": "^0.15.0-rc.8",
     "jest": "^22.4.2",
+    "lodash": "^4.17.5",
     "node-sass": "^4.7.2",
-    "resolve-url-loader": "^2.2.1",
+    "resolve-url-loader": "^2.3.0",
     "sass-loader": "^6.0.6",
+    "server": "^1.0.18",
     "style-loader": "^0.20.2",
+    "vue": "^2.5.13",
     "vue-jest": "^2.1.0",
     "vue-loader": "^14.1.1",
     "vue-server-renderer": "^2.5.13",
-    "vue-template-compiler": "^2.5.13"
-  },
-  "dependencies": {
-    "vue": "^2.5.13",
-    "webpack": "^3.11.0"
+    "vue-template-compiler": "^2.5.13",
+    "webpack": "^4.1.0",
+    "webpack-cli": "^2.0.10",
+    "webpack-dev": "^1.1.0",
+    "webpack-dev-server": "^3.1.0"
   },
   "husky": {
     "hooks": {
