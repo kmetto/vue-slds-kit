@@ -1,4 +1,4 @@
-import { mount, shallow } from '@vue/test-utils';
+import { mount, shallowMount } from '@vue/test-utils';
 import { createRenderer } from 'vue-server-renderer';
 import Button from './Button.vue';
 
@@ -10,7 +10,7 @@ describe('Button', () => {
 
   test('matches snapshot', () => {
     const renderer = createRenderer();
-    const wrapper = shallow(Button);
+    const wrapper = shallowMount(Button);
     renderer.renderToString(wrapper.vm, (err, str) => {
       if (err) {
         throw err;
@@ -21,7 +21,7 @@ describe('Button', () => {
 
   test('matches snapshot with slot', () => {
     const renderer = createRenderer();
-    const wrapper = shallow(Button, {
+    const wrapper = shallowMount(Button, {
       slots: {
         default: 'Button',
       },
@@ -44,7 +44,7 @@ describe('Button', () => {
   });
 
   test('displays slds-button_brand class', () => {
-    const wrapper = shallow(Button, {
+    const wrapper = shallowMount(Button, {
       propsData: {
         brand: true,
       },
@@ -53,7 +53,7 @@ describe('Button', () => {
   });
 
   test('displays slds-button_inverse class', () => {
-    const wrapper = shallow(Button, {
+    const wrapper = shallowMount(Button, {
       propsData: {
         inverse: true,
       },
@@ -63,7 +63,7 @@ describe('Button', () => {
   });
 
   test('displays slds-button_destructive class', () => {
-    const wrapper = shallow(Button, {
+    const wrapper = shallowMount(Button, {
       propsData: {
         destructive: true,
       },
@@ -73,7 +73,7 @@ describe('Button', () => {
   });
 
   test('displays slds-button_success class', () => {
-    const wrapper = shallow(Button, {
+    const wrapper = shallowMount(Button, {
       propsData: {
         success: true,
       },
@@ -83,7 +83,7 @@ describe('Button', () => {
   });
 
   test('displays disabled button', () => {
-    const wrapper = shallow(Button, {
+    const wrapper = shallowMount(Button, {
       propsData: {
         disabled: true,
       },

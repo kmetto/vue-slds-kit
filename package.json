@@ -26,7 +26,7 @@
   "homepage": "https://github.com/kmetto/vue-slds-kit#readme",
   "dependencies": {
     "@salesforce-ux/design-system": "^2.5.2",
-    "@vue/test-utils": "^1.0.0-beta.12",
+    "@vue/test-utils": "^1.0.0-beta.20",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-jest": "^22.4.1",

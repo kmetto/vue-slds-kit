@@ -1,0 +1,13 @@
+<div class="slds-form-element">
+  <label class="slds-form-element__label" for="text-input-id-1">Input Label</label>
+  <slot name="slds-input__icon"></slot>
+  <div class="slds-form-element__control">
+    <input type="text" id="text-input-id-1" class="slds-input" :placeholder="placeholder" :value="value" @input="$emit('input', $event.target.value)"/>
+  </div>
+  <button @click="$emit('clear')" v-if="clearButton" class="slds-input__icon slds-input__icon_right slds-button slds-button_icon slds-button_clear">
+    <svg class="slds-button__icon slds-icon-text-light" aria-hidden="true">
+      <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#clear" xmlns:xlink="http://www.w3.org/1999/xlink" />
+    </svg>
+    <span class="slds-assistive-text">Clear</span>
+  </button>
+</div>
