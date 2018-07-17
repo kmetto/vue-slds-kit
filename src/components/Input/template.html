@@ -1,5 +1,5 @@
 <div class="slds-form-element">
-  <label class="slds-form-element__label" for="text-input-id-1">Input Label</label>
+  <label class="slds-form-element__label" for="text-input-id-1">{{ label }}</label>
   <slot name="slds-input__icon"></slot>
   <div class="slds-form-element__control">
     <input type="text" id="text-input-id-1" class="slds-input" :placeholder="placeholder" :value="value" @input="$emit('input', $event.target.value)"/>

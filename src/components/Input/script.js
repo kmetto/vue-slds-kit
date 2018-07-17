@@ -15,5 +15,10 @@ export default {
       type: Boolean,
       default: false,
     },
+    label: {
+      required: false,
+      type: String,
+      default: 'Input value',
+    },
   },
 };
