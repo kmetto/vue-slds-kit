@@ -1,13 +1,13 @@
 import path from 'path';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import CleanWebpackPlugin from 'clean-webpack-plugin';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
 import config from './config';
 
 export default {
   context: config.root,
   entry: {
     'vue-slds-kit.js': path.resolve('src', 'index.js'),
-    'vue-slds-kit.css': path.resolve('src', 'styles.sass'),
   },
   output: {
     path: config.lib,
@@ -45,8 +45,13 @@ export default {
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: [
-            { loader: 'css-loader' },
-            { loader: 'resolve-url-loader' },
+            {
+              loader: 'css-loader',
+              options: {
+                url: false,
+                import: false,
+              },
+            },
             { loader: 'sass-loader?sourceMap' },
           ],
         }),
@@ -59,5 +64,11 @@ export default {
       allowExternal: true,
     }),
     new ExtractTextPlugin('vue-slds-kit.css'),
+    new CopyWebpackPlugin([
+      {
+        from: 'node_modules/@salesforce-ux/design-system/assets',
+        to: 'assets',
+      },
+    ]),
   ],
 };
