@@ -4,9 +4,15 @@ export default {
     assistiveText: {
       default: '',
       required: false,
+      type: String,
     },
     size: {
       default: 'small',
+      type: String,
+    },
+    src: {
+      required: true,
+      type: String,
     },
   },
 };
